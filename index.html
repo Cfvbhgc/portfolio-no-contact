@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalPr0 — Fullstack-разработчик</title>
+  <meta name="description" content="Портфолио fullstack-разработчика DigitalPr0. Telegram-боты, веб-приложения, мобильная разработка, бэкенд-системы.">
+  <meta property="og:title" content="DigitalPr0 — Fullstack-разработчик">
+  <meta property="og:description" content="Портфолио fullstack-разработчика. Telegram-боты, веб-приложения, мобильная разработка.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Page Transition Overlay -->
+<div class="page-transition active"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">DigitalPr0</a>
+
+    <div class="nav-links">
+      <a href="#hero" class="active">Главная</a>
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#experience">Опыт</a>
+      <a href="#cta">Услуги</a>
+    </div>
+
+    <div class="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <a href="#hero">Главная</a>
+  <a href="#about">Обо мне</a>
+  <a href="#skills">Навыки</a>
+  <a href="#projects">Проекты</a>
+  <a href="#experience">Опыт</a>
+  <a href="#cta">Услуги</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <!-- Three.js 3D background -->
+  <div id="three-container"></div>
+  <!-- Particles canvas -->
+  <canvas id="particles-canvas"></canvas>
+  <!-- Parallax decorations -->
+  <div class="parallax-orb orb-1"></div>
+  <div class="parallax-orb orb-2"></div>
+
+  <div class="hero-content">
+    <p class="hero-greeting mono">&lt;hello world /&gt;</p>
+    <h1 class="hero-title">
+      Привет, я <span class="typewriter accent-text" data-text="DigitalPr0"></span>
+    </h1>
+    <p class="hero-subtitle">Fullstack-разработчик · Telegram-боты · Мобильные приложения</p>
+    <a href="#projects" class="hero-cta">
+      Смотреть проекты
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+    </a>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about" style="position:relative;overflow:hidden;">
+  <div class="parallax-orb orb-3"></div>
+  <div class="container">
+    <h2 class="section-title scatter-text">Обо мне</h2>
+    <div class="about-content reveal">
+      <p>Я — fullstack-разработчик с многолетним опытом создания веб-приложений, серверных систем и мобильных решений. Работаю как фрилансер, помогая бизнесу автоматизировать процессы и выходить в цифровое пространство.</p>
+      <p>Мой стек технологий охватывает весь цикл разработки: от интерактивных интерфейсов на React до высоконагруженных бэкендов на Python, Node.js и Go. Отдельно специализируюсь на Telegram-ботах — от простых помощников до сложных систем с оплатой и интеграциями.</p>
+      <p>Ценю чистый код, минималистичный дизайн и решения, которые действительно работают. Каждый проект — это возможность решить реальную задачу и создать что-то полезное.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS (Horizontal Scroll) ============ -->
+<section class="skills-section" id="skills">
+  <div class="skills-header">
+    <div class="container">
+      <h2 class="section-title reveal">Навыки и стек</h2>
+      <p class="section-subtitle reveal">Технологии, с которыми я работаю каждый день</p>
+    </div>
+  </div>
+
+  <div class="skills-grid">
+    <!-- Languages -->
+    <div class="skill-category">
+      <h3>// Языки</h3>
+      <div class="skill-icons">
+        <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+        <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+        <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="skill-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+        <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="skill-item"><i class="devicon-c-plain colored"></i><span>C</span></div>
+        <div class="skill-item"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+        <div class="skill-item"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+        <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="skill-item"><i class="devicon-go-plain colored"></i><span>Go</span></div>
+        <div class="skill-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        <div class="skill-item"><i class="devicon-kotlin-plain colored"></i><span>Kotlin</span></div>
+        <div class="skill-item"><i class="devicon-swift-plain colored"></i><span>Swift</span></div>
+      </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="skill-category">
+      <h3>// Фреймворки</h3>
+      <div class="skill-icons">
+        <div class="skill-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+        <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="skill-item"><i class="devicon-express-original"></i><span>Express</span></div>
+        <div class="skill-item"><i class="devicon-dotnetcore-plain colored"></i><span>.NET</span></div>
+        <div class="skill-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+        <div class="skill-item"><i class="devicon-flask-original"></i><span>Flask</span></div>
+        <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+        <div class="skill-item"><i class="devicon-spring-plain colored"></i><span>Spring</span></div>
+        <div class="skill-item"><i class="devicon-laravel-original colored"></i><span>Laravel</span></div>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-category">
+      <h3>// Базы данных</h3>
+      <div class="skill-icons">
+        <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div class="skill-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3>// Инструменты</h3>
+      <div class="skill-icons">
+        <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+        <div class="skill-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="skill-item"><i class="devicon-linux-plain"></i><span>Linux</span></div>
+        <div class="skill-item"><i class="devicon-graphql-plain colored"></i><span>GraphQL</span></div>
+      </div>
+    </div>
+
+    <!-- Bots -->
+    <div class="skill-category">
+      <h3>// Боты</h3>
+      <div class="skill-icons">
+        <div class="skill-item">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" style="color:var(--accent-light)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.66-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.41-1.41-.87.03-.24.37-.49 1.02-.74 3.99-1.74 6.65-2.89 7.99-3.44 3.8-1.58 4.59-1.86 5.1-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"/></svg>
+          <span>Telegram</span>
+        </div>
+        <div class="skill-item"><i class="devicon-python-plain colored"></i><span>aiogram</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-progress"><div class="skills-progress-bar"></div></div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects" style="position:relative;overflow:hidden;">
+  <div class="parallax-orb orb-4"></div>
+  <div class="container">
+    <h2 class="section-title scatter-text">Мои проекты</h2>
+    <p class="section-subtitle reveal">Выберите категорию, чтобы посмотреть работы</p>
+
+    <div class="projects-grid">
+      <a href="projects-frontend.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-frontend.jpg)"></div>
+        <div class="card-icon">🎨</div>
+        <h3>Frontend</h3>
+        <p>Веб-интерфейсы, лендинги и SPA на HTML/CSS/JS и React</p>
+        <div class="badge">6 проектов</div>
+      </a>
+
+      <a href="projects-python.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-python.jpg)"></div>
+        <div class="card-icon">🐍</div>
+        <h3>Backend Python</h3>
+        <p>API, микросервисы и автоматизация на Flask, FastAPI, Django</p>
+        <div class="badge">5 проектов</div>
+      </a>
+
+      <a href="projects-nodejs.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-nodejs.jpg)"></div>
+        <div class="card-icon">🟢</div>
+        <h3>Backend Node.js</h3>
+        <p>Real-time сервисы, API и инструменты на Express и Socket.io</p>
+        <div class="badge">5 проектов</div>
+      </a>
+
+      <a href="projects-bots.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-bots.jpg)"></div>
+        <div class="card-icon">🤖</div>
+        <h3>Telegram-боты</h3>
+        <p>Боты для бизнеса, автоматизации и управления на aiogram</p>
+        <div class="badge">6 проектов</div>
+      </a>
+
+      <a href="projects-cpp.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-cpp.jpg)"></div>
+        <div class="card-icon">⚙️</div>
+        <h3>C / C++</h3>
+        <p>Системное программирование, движки и утилиты</p>
+        <div class="badge">5 проектов</div>
+      </a>
+
+      <a href="projects-csharp.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-csharp.jpg)"></div>
+        <div class="card-icon">🔷</div>
+        <h3>C# / .NET</h3>
+        <p>Десктоп-приложения, API и игры на .NET и Unity</p>
+        <div class="badge">5 проектов</div>
+      </a>
+
+      <a href="projects-java.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-java.jpg)"></div>
+        <div class="card-icon">☕</div>
+        <h3>Java</h3>
+        <p>Enterprise-решения и Android на Spring Boot и Java</p>
+        <div class="badge">5 проектов</div>
+      </a>
+
+      <a href="projects-php.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-php.jpg)"></div>
+        <div class="card-icon">🐘</div>
+        <h3>PHP</h3>
+        <p>Интернет-магазины, CMS и панели на Laravel и PHP</p>
+        <div class="badge">5 проектов</div>
+      </a>
+
+      <a href="projects-kotlin.html" class="project-category-card">
+        <div class="cat-bg" style="background-image:url(assets/images/cat-kotlin.jpg)"></div>
+        <div class="card-icon">📱</div>
+        <h3>Kotlin Mobile</h3>
+        <p>Android-приложения на Kotlin и Jetpack Compose</p>
+        <div class="badge">5 проектов</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE / TIMELINE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section-title reveal">Опыт</h2>
+    <p class="section-subtitle reveal">Мой путь в разработке</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2021</div>
+        <div class="timeline-title">Начало пути</div>
+        <div class="timeline-desc">Первые проекты на HTML и CSS. Знакомство с веб-разработкой, вёрстка макетов, изучение основ JavaScript.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2022</div>
+        <div class="timeline-title">Углубление в бэкенд</div>
+        <div class="timeline-desc">Освоение Python, работа с базами данных. Первые Telegram-боты и скрипты автоматизации для реальных задач.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2023</div>
+        <div class="timeline-title">Fullstack-разработка</div>
+        <div class="timeline-desc">React, Node.js, первые коммерческие проекты. Разработка полноценных веб-приложений от фронтенда до деплоя.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2024</div>
+        <div class="timeline-title">Расширение стека</div>
+        <div class="timeline-desc">Изучение C++, Java, Go, Kotlin. Мобильная разработка, системное программирование, микросервисная архитектура.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2025</div>
+        <div class="timeline-title">Фриланс и автоматизация</div>
+        <div class="timeline-desc">Системы автоматизации для бизнеса, сложные Telegram-боты, Docker/DevOps. Работа с клиентами по всему миру.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section cta-section" id="cta">
+  <div class="container">
+    <h2 class="section-title reveal" style="text-align:center;">Готов к новому проекту?</h2>
+    <p class="section-subtitle reveal" style="margin-left:auto;margin-right:auto;text-align:center;">Расскажите о вашей идее — я предложу оптимальное решение и подберу стек под ваши задачи</p>
+
+    <div class="cta-cards reveal">
+      <div class="cta-card">
+        <div class="cta-card-icon">🚀</div>
+        <h3>Веб-разработка</h3>
+        <p>Сайты, лендинги, SPA на React с современными анимациями и мобильной адаптацией</p>
+      </div>
+      <div class="cta-card">
+        <div class="cta-card-icon">⚙️</div>
+        <h3>Backend & API</h3>
+        <p>Надёжные API на Python/Node.js, базы данных, Docker, интеграции с любыми сервисами</p>
+      </div>
+      <div class="cta-card">
+        <div class="cta-card-icon">🤖</div>
+        <h3>Telegram-боты</h3>
+        <p>Боты любой сложности: от простых до систем с оплатой, CRM и аналитикой</p>
+      </div>
+    </div>
+
+    <p class="cta-bottom-text reveal">Напишите мне на бирже где нашли это портфолио — обсудим детали вашего проекта</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 DigitalPr0. Все права защищены.</p>
+    <p class="footer-disclaimer">Все представленные проекты реальные. По просьбе заказчиков реальные названия компаний не указаны.</p>
+    <div class="footer-links"></div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
